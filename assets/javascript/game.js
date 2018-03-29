@@ -14,8 +14,7 @@ document.onkeyup = function(event) {
 
   var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-  if ((userGuess === "q") || (userGuess === "w") || (userGuess === "e") || (userGuess === "r") || (userGuess === "t") || (userGuess === "y") || (userGuess === "u") || (userGuess === "i") || (userGuess === "o") || (userGuess === "p") || (userGuess === "a") || (userGuess === "s") || (userGuess === "d") || (userGuess === "f") || (userGuess === "g") || (userGuess === "h") || (userGuess === "j") || (userGuess === "k") || (userGuess === "l") || (userGuess === "z") || (userGuess === "x") || (userGuess === "c") || (userGuess === "v") || (userGuess === "b") || (userGuess === "n") || (userGuess === "m")) {
-
+  if (computerChoices.includes(userGuess)){
     
     if ((userGuess === computerGuess)) {
       wins++;
